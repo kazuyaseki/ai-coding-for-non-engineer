@@ -27,6 +27,32 @@
 2. [Node.js](https://nodejs.org/ja/)をインストール
 3. [prompts.md](./prompts.md) から第3章のプロンプトをコピー
 
+### 完成版サンプルを動かす
+
+ハンズオンで作成するGemini Chatアプリの完成版を用意しています。
+
+```bash
+# 1. サンプルアプリのディレクトリに移動
+cd sample-apps/gemini-chat
+
+# 2. 依存パッケージをインストール
+npm install
+
+# 3. 環境変数ファイルを作成
+#    .env ファイルを作成し、Gemini APIキーを設定してください
+cp .env.example .env
+echo "VITE_GEMINI_API_KEY=あなたのAPIキー" > .env
+
+# 4. 開発サーバーを起動
+npm run dev
+```
+
+ブラウザで `http://localhost:5173` を開くと、チャットアプリが表示されます。
+
+> **💡 APIキーの取得方法**
+> 
+> Gemini APIキーは [Google AI Studio](https://aistudio.google.com/api-keys) から無料で取得できます。詳しくは本書の第3章をご覧ください。
+
 ## 📝 プロンプトの使い方
 
 [prompts.md](./prompts.md) には、本書で登場するプロンプトがまとめられています。
