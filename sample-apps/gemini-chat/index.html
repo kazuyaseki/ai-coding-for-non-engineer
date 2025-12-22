@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEMINI // OS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo+2:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="sky-trails">
+        <div class="trail trail-1"></div>
+        <div class="trail trail-2"></div>
+        <div class="trail trail-3"></div>
+        <div class="trail trail-4"></div>
+    </div>
+    <div class="grid-overlay"></div>
+
+    <div class="layout-wrapper">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <button id="newChatBtn" class="new-chat-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <span>NEW_SYNC</span>
+                </button>
+            </div>
+            <div class="history-list" id="historyList">
+                <!-- Data streams populated here -->
+            </div>
+        </nav>
+
+        <main class="app-container">
+            <header class="app-header">
+                <div class="logo">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L14.85 9.15L22 12L14.85 14.85L12 22L9.15 14.85L2 12L9.15 9.15L12 2Z"
+                            stroke="#00f3ff" stroke-width="2" stroke-linejoin="round" />
+                    </svg>
+                    <span>GEMINI // OS</span>
+                </div>
+                <div class="status-indicator">
+                    <span class="lamp"></span> ONLINE
+                </div>
+            </header>
+
+            <section class="chat-display" id="chatDisplay">
+                <div class="message ai-message">
+                    <div class="message-content">
+                        SYSTEM READY. SESSION ESTABLISHED. HOW CAN I ASSIST?
+                    </div>
+                </div>
+            </section>
+
+            <section class="input-area">
+                <div class="loading-overlay" id="loadingOverlay">
+                    <span class="loading-text">SYNCING...</span>
+                </div>
+                <div class="input-wrapper">
+                    <textarea id="userInput" placeholder="TYPE COMMAND..." rows="1"></textarea>
+                    <button id="sendBtn" title="SEND">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 2L11 13M22 2L15 22L11 13M11 13L2 9L22 2" stroke="#00f3ff" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
