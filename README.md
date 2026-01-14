@@ -7,9 +7,8 @@
 
 ## 🛒 購入はこちら
 
-<!-- TODO: 購入リンクを追加 -->
-- [note]()
-- [Booth]()
+- [note](https://note.com/ai_saborou/n/nf56e5ba7a62e)
+- [Booth](https://ai-saborou.booth.pm/items/7794751)
 
 ## 📁 このリポジトリの内容
 
